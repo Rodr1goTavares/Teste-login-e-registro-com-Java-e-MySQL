@@ -33,13 +33,15 @@ public class App {
 	private static void registerMenu() {
 		Scanner scn = new Scanner(System.in);
 		System.out.println("<< Register >>");
-		
+			
 		System.out.println("User:");
 		String user = scn.nextLine();
-		
+			
 		System.out.println("Email:");
 		String email = scn.nextLine();
-		
+			
+		scanner.close();
+			
 		try {
 			Register.createAccount(user, email);
 		}
