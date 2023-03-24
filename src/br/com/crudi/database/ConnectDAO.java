@@ -15,9 +15,9 @@ public class ConnectDAO {
 			String driverMySQL =  "com.mysql.cj.jdbc.Driver";
 			Class.forName(driverMySQL);
 			
-			final String DATABASE_URL = "jdbc:mysql://localhost:3306/your-database";
-			final String USER = "your user";
-			final String PASS = "your password";
+			final String DATABASE_URL = "jdbc:mysql://yourIp:3306/your-database";
+			final String USER = "database user";
+			final String PASS = "database password";
 			
 			//Connect database
 			this.connection =  DriverManager.getConnection(DATABASE_URL, USER, PASS);
