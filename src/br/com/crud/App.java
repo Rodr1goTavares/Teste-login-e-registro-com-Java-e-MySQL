@@ -1,4 +1,4 @@
-package br.com.crudi;
+package br.com.crud;
 
 import java.util.Scanner;
 

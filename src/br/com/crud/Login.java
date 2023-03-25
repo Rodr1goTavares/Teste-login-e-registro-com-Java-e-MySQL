@@ -1,6 +1,6 @@
-package br.com.crudi;
+package br.com.crud;
 
-import br.com.crudi.database.ConnectDAO;
+import br.com.crud.database.ConnectDAO;
 
 public class Login {
 	public static void verifyLogin(String user, String email) {

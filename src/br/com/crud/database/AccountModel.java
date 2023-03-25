@@ -1,4 +1,4 @@
-package br.com.crudi.database;
+package br.com.crud.database;
 
 public class AccountModel {
 	private int id;

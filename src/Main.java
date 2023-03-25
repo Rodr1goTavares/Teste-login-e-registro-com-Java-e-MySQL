@@ -1,4 +1,4 @@
-import br.com.crudi.App;
+import br.com.crud.App;
 
 public class Main {
 	public static void main(String[] args) {

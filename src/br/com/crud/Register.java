@@ -1,9 +1,9 @@
-package br.com.crudi;
+package br.com.crud;
 
 import java.util.Random;
 
-import br.com.crudi.database.AccountModel;
-import br.com.crudi.database.ConnectDAO;
+import br.com.crud.database.AccountModel;
+import br.com.crud.database.ConnectDAO;
 
 public class Register {
 
