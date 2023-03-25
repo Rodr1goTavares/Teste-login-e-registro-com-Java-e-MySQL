@@ -4,6 +4,7 @@ import java.util.Random;
 
 import br.com.crud.database.AccountModel;
 import br.com.crud.database.ConnectDAO;
+import br.com.crud.operations.Create;
 
 public class Register {
 
@@ -14,8 +15,7 @@ public class Register {
 			account.setUser(user);
 			account.setEmail(email);
 			
-			ConnectDAO data = new ConnectDAO();
-			data.insertAccount(account);			
+			Create.insertAccount(account);
 		}
 		catch (Exception error) {
 			System.out.println("Failed to insertAccount in ConnectDAO" + error);
