@@ -23,7 +23,7 @@ public class App {
 		System.out.println("User: ");
 		String user = scanner.nextLine();
 		
-		System.out.println("User: ");
+		System.out.println("Email: ");
 		String email = scanner.nextLine();
 		
 		System.out.println("Logging...");

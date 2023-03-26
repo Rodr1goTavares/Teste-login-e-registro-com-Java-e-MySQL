@@ -1,9 +1,12 @@
 package br.com.crud.database;
 
+import java.security.PublicKey;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+
+import javax.management.loading.PrivateClassLoader;
 
 public class ConnectDAO {
 	
@@ -11,7 +14,6 @@ public class ConnectDAO {
 		Connection cnctDB = connectDatabase();
 		return cnctDB;
 	}
-	
 	
 	private static Connection connectDatabase() {
 		Connection connection = null;	
@@ -36,7 +38,7 @@ public class ConnectDAO {
             return connection;
 		}
 		catch(SQLException | ClassNotFoundException error) {
-			System.out.println("A error has occurred (br.com.crudi.database) " +  error);
+			System.out.println("Filed to connect to database" +  error);
 			return connection = null;
 		}
 	}
