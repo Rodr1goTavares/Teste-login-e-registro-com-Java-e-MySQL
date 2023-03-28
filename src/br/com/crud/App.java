@@ -27,7 +27,7 @@ public class App {
 		String email = scanner.nextLine();
 		
 		System.out.println("Logging...");
-		Login.verifyLogin(user, email);
+		Login.verifyLogin(user.trim(), email.trim());
 	}
 	
 	private static void registerMenu() {
@@ -43,7 +43,7 @@ public class App {
 		scanner.close();
 			
 		try {
-			Register.createAccount(user, email);
+			Register.createAccount(user.trim(), email.trim());
 		}
 		catch (Exception err) {
 			System.out.println("A error has occourred (br.com.crudi.App)" +  err);
